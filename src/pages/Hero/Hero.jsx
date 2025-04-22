@@ -41,21 +41,16 @@ const GridBackground = () => {
 };
 
 export default function Hero() {
-  const words = [
-    "Full-Stack Developer & UI/UX Enthusiast",
-    "JavaScript Developer & Creator of Olova.js",
-    "Learning MARN Stack",
-    "Linux & GitHub for DevOps Enthusiast",
-  ];
+  const words = ["Front End Developer ", "Learning MARN Stack"];
 
   const [code] = useState(`
 const profile = {
-    name: 'Nazmul Hossain',
-    title: 'Full-Stack Developer | Cloud Enthusiast | Problem Solver',
+    name: 'Rifat jayed',
+    title: 'Front end Developer | Problem Solver',
     skills: [
-        'React', 'NextJS', 'Redux', 'Express',
-        'MySQL', 'MongoDB', 'Docker', 'AWS', 'TypeScript',
-        'GraphQL', 'Git', 'Linux', 'Discord Development'
+        'React', 'Express',
+        'MongoDB', 
+        
     ],
     hardWorker: true,
     quickLearner: true,
@@ -66,7 +61,7 @@ const profile = {
             this.hardWorker &&
             this.problemSolver &&
             this.skills.length >= 5 &&
-            this.yearsOfExperience >= 3
+            this.yearsOfExperience >= 2
         );
     }
 };
@@ -138,7 +133,7 @@ const profile = {
                     I'm
                     <span className="typing-effect gradient-text">
                       {" "}
-                      Nazmul Hossain
+                      Rifat jayed
                     </span>
                   </span>
                 </h1>
@@ -159,7 +154,7 @@ const profile = {
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
                 <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                  JavaScript lover 🚀 | OlovaJS creator 🔧 | Crafting frameworks
+                  JavaScript lover 🚀 | React Developer🔧 | Crafting frameworks
                   and coding the future 💻✨
                 </p>
               </div>

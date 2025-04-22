@@ -1,6 +1,7 @@
 import { ReactLenis } from "lenis/react";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
+import sasthya from "../../assets/images/sasthya.png";
 import PropTypes from "prop-types";
 
 const projects = [
@@ -9,7 +10,7 @@ const projects = [
     description:
       "A lightweight JavaScript library for creating beautiful, responsive UI components.",
     src: "rock.jpg",
-    link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
+    link: { sasthya },
     color: "#5196fd",
     githubLink: "https://github.com/olovajs/olova",
     liveLink: "https://olova.js.org/",

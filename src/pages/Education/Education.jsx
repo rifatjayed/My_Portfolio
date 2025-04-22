@@ -16,23 +16,23 @@ const EducationSection = () => {
   const educationData = [
     {
       degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
+      school: "Chandaikona ML High School",
       mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
-      description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+      year: "2016-2017",
+      achievements: ["GPA: 4.14", "Subject: Science"],
+
+      // description:
+      //   "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
     },
     {
       degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
+      school: "Tejgoan College, Dhaka",
       mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
-      description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+      year: "2018-2019",
+      achievements: ["GPA: 4.00", "Subject: Arts"],
+      // skills: ["Literature", "Social Studies", "Economics", "History"],
+      // description:
+      //   "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
     },
   ];
 
@@ -119,9 +119,9 @@ const EducationSection = () => {
                   </p>
                 </div>
 
-                <p className="text-gray-300 text-sm italic border-l-2 border-teal-500 pl-3">
+                {/* <p className="text-gray-300 text-sm italic border-l-2 border-teal-500 pl-3">
                   {edu.description}
-                </p>
+                </p> */}
 
                 <div className="space-y-3">
                   <h4 className="text-sm font-semibold text-white flex items-center gap-2">
@@ -141,7 +141,7 @@ const EducationSection = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
+                {/* <div className="flex flex-wrap gap-2">
                   {edu.skills.map((skill, i) => (
                     <span
                       key={i}
@@ -150,7 +150,7 @@ const EducationSection = () => {
                       {skill}
                     </span>
                   ))}
-                </div>
+                </div> */}
               </div>
             </motion.div>
           ))}
