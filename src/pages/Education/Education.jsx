@@ -19,20 +19,21 @@ const EducationSection = () => {
       school: "Chandaikona ML High School",
       mascot: "📘",
       year: "2016-2017",
-      achievements: ["GPA: 4.14", "Subject: Science"],
-
-      // description:
-      //   "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+      achievements: ["Subject: Science"],
     },
     {
       degree: "Higher Secondary Certificate (HSC)",
       school: "Tejgoan College, Dhaka",
       mascot: "📗",
       year: "2018-2019",
-      achievements: ["GPA: 4.00", "Subject: Arts"],
-      // skills: ["Literature", "Social Studies", "Economics", "History"],
-      // description:
-      //   "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+      achievements: ["Subject: Arts"],
+    },
+    {
+      degree: "Bachelor of Social Science (BSS)",
+      school: "Government Titumir College, Dhaka",
+      mascot: "🎓",
+      year: "2019-2020",
+      achievements: ["Subject: Political Science"],
     },
   ];
 
@@ -140,17 +141,6 @@ const EducationSection = () => {
                     ))}
                   </div>
                 </div>
-
-                {/* <div className="flex flex-wrap gap-2">
-                  {edu.skills.map((skill, i) => (
-                    <span
-                      key={i}
-                      className="px-2 py-1 text-xs rounded bg-blue-500/10 text-blue-300"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div> */}
               </div>
             </motion.div>
           ))}
