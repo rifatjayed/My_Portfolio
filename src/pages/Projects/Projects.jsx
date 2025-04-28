@@ -1,49 +1,43 @@
 import { ReactLenis } from "lenis/react";
 import { useTransform, motion, useScroll } from "framer-motion";
-import { useRef } from "react";
-import sasthya from "../../assets/images/sasthya.png";
+import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
+
+import sasthya from "../../assets/images/sasthya.png";
+import blood from "../../assets/images/blood.png";
+import nikee from "../../assets/images/nike.png";
 
 const projects = [
   {
-    title: "Olova! A Lightweight JavaScript Library",
+    title: "Sasthya Daktar- Your Healthcare Partner",
     description:
-      "A lightweight JavaScript library for creating beautiful, responsive UI components.",
-    src: "rock.jpg",
-    link: { sasthya },
+      "SasthyaDaktar is a healthcare platform where users can easily find doctors, book appointments, and get medical assistance from anywhere. Built with React, Node.js, and MongoDB.",
+    // src: "rock.jpg",
+    src: sasthya,
+    // link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
     color: "#5196fd",
-    githubLink: "https://github.com/olovajs/olova",
-    liveLink: "https://olova.js.org/",
+    githubLink: "https://github.com/rifatjayed/Doctor-Appoinment",
+    liveLink: "https://sasthya-daktar.netlify.app",
   },
   {
-    title: "A sleek portfolio built with React and Tailwind CSS ",
+    title: "BloodHub - Connect Donors and Save Lives ",
     description:
-      "A sleek portfolio built with React and Tailwind CSS to showcase your skills, projects, and experience in a modern design.",
-    src: "tree.jpg",
-    link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+      "BloodHub is a powerful platform where users can easily find nearby blood donors in times of need. Anyone willing to donate can quickly register and become a life-saver",
+    src: blood,
+    // link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
     color: "#8f89ff",
-    githubLink: "https://github.com/seraprogrammer/portfolio",
-    liveLink: "https://codervai.vercel.app",
+    githubLink: "https://github.com/rifatjayed/Blood_Donation",
+    liveLink: "https://donorhub.netlify.app",
   },
   {
-    title: "🚀 CodeWhisperer",
+    title: "ShoeNest - Your Ultimate Shoe Destination ",
     description:
-      "🚀 CodeWhisperer A powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "water.jpg",
-    link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
-    color: "#fff",
-    githubLink: "https://github.com/seraprogrammer/codewhisperer",
-    liveLink: "https://codewhisperer.vercel.app/",
-  },
-  {
-    title: "CodeKori 🔥",
-    description:
-      "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "house.jpg",
-    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
-    color: "#ed649e",
-    githubLink: "https://github.com/seraprogrammer/CodeKori",
-    liveLink: "https://codekori.js.org",
+      "ShoeNest is a stylish and modern e-commerce platform dedicated to shoe lovers. Discover the latest collections, explore a variety of brands, and enjoy a smooth shopping experience designed for both comfort and style.",
+    src: nikee,
+    // link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+    color: "#8f89ff",
+    githubLink: "https://github.com/rifatjayed/Nike-Shoes",
+    liveLink: "https://nike-shoes27.netlify.app/",
   },
 ];
 
@@ -53,6 +47,50 @@ export default function Projects() {
     target: container,
     offset: ["start start", "end end"],
   });
+
+  useEffect(() => {
+    // Add specific styles for 1366x768 resolution
+    const style = document.createElement("style");
+    style.textContent = `
+      @media screen and (width: 1366px) and (height: 768px),
+             screen and (width: 1367px) and (height: 768px),
+             screen and (width: 1368px) and (height: 769px) {
+        .project-card {
+          scale: 0.85;
+          margin-top: -5vh;
+        }
+        .project-container {
+          height: 90vh;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Resolution check function
+    const checkResolution = () => {
+      const isTargetResolution =
+        window.innerWidth >= 1360 &&
+        window.innerWidth <= 1370 &&
+        window.innerHeight >= 760 &&
+        window.innerHeight <= 775;
+
+      if (isTargetResolution) {
+        document.documentElement.style.setProperty("--project-scale", "0.85");
+        document.documentElement.style.setProperty("--project-margin", "-5vh");
+      } else {
+        document.documentElement.style.setProperty("--project-scale", "1");
+        document.documentElement.style.setProperty("--project-margin", "0");
+      }
+    };
+
+    checkResolution();
+    window.addEventListener("resize", checkResolution);
+
+    return () => {
+      document.head.removeChild(style);
+      window.removeEventListener("resize", checkResolution);
+    };
+  }, []);
 
   return (
     <ReactLenis root>
@@ -64,7 +102,8 @@ export default function Projects() {
               <Card
                 key={`p_${i}`}
                 i={i}
-                url={project.link}
+                // url={project.link}
+                url={project.src}
                 title={project.title}
                 color={project.color}
                 description={project.description}
@@ -100,14 +139,16 @@ function Card({
   return (
     <div
       ref={container}
-      className="h-screen flex items-center justify-center sticky top-0"
+      className="h-screen flex items-center justify-center sticky top-0 project-container"
     >
       <motion.div
         style={{
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
+          transform: `scale(var(--project-scale, 1))`,
+          marginTop: "var(--project-margin, 0)",
         }}
-        className="relative -top-[25%] h-auto w-[90%] md:w-[85%] lg:w-[75%] xl:w-[65%] origin-top"
+        className="relative -top-[25%] h-auto w-[90%] md:w-[85%] lg:w-[75%] xl:w-[65%] origin-top project-card"
         whileHover={{
           y: -8,
           transition: { duration: 0.3 },
