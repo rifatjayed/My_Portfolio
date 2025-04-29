@@ -9,6 +9,7 @@ import Skills from "./pages/Skills/Skills";
 import Education from "./pages/Education/Education";
 
 import { Route, Routes } from "react-router-dom";
+import AnalyticsTracker from "./AnalyticsTracker";
 
 export default function App() {
   const [isOnePage, setIsOnePage] = useState(false); // Toggle state
