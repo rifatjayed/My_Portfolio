@@ -28,14 +28,24 @@ export default function App() {
         </>
       ) : (
         // Router Mode: Use routes for navigation
-        <Routes>
-          `
-          <Route path="/" element={<Hero />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+
+        <>
+          <AnalyticsTracker /> {/* ← এটা বসাও শুধু Routes এর উপরে */}
+          <Routes>
+            <Route path="/" element={<Hero />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </>
+        // <Routes>
+        //   <Route path="/" element={<Hero />} />
+        //   <Route path="/skills" element={<Skills />} />
+        //   <Route path="/education" element={<Education />} />
+        //   <Route path="/contact" element={<Contact />} />
+        //   <Route path="/projects" element={<Projects />} />
+        // </Routes>
       )}
     </>
   );

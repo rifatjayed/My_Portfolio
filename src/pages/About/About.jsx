@@ -71,3 +71,13 @@ export default function About() {
     </>
   );
 }
+
+// <!-- Google tag (gtag.js) -->
+// <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL66SLEMXW"></script>
+// <script>
+//   window.dataLayer = window.dataLayer || [];
+//   function gtag(){dataLayer.push(arguments);}
+//   gtag('js', new Date());
+
+//   gtag('config', 'G-TL66SLEMXW');
+// </script>
