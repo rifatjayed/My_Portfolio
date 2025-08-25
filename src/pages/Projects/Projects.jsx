@@ -6,8 +6,20 @@ import PropTypes from "prop-types";
 import sasthya from "../../assets/images/sasthya.png";
 import blood from "../../assets/images/blood.png";
 import nikee from "../../assets/images/nike.png";
+import job from "../../assets/images/job.png";
 
 const projects = [
+  {
+    title: "JobInto – Smart Job Search Platform",
+    description:
+      "JobInto is a React-based platform where users can search and filter jobs based on their preferences. They can view detailed job listings and apply directly through the platform, making the job hunt faster and easier.",
+    // src: "rock.jpg",
+    src: job,
+    // link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
+    color: "#5196fd",
+    githubLink: "https://github.com/rifatjayed/Doctor-Appoinment",
+    liveLink: "https://sasthya-daktar.netlify.app",
+  },
   {
     title: "Sasthya Daktar- Your Healthcare Partner",
     description:
@@ -94,7 +106,7 @@ export default function Projects() {
 
   return (
     <ReactLenis root>
-      <main className="bg-black" ref={container}>
+      <main className="bg-black pt-40  lg:pt-[30px]" ref={container}>
         <section className="text-white w-full bg-slate-950">
           {projects.map((project, i) => {
             const targetScale = 1 - (projects.length - i) * 0.05;
