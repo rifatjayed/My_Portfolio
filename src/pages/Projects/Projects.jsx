@@ -17,8 +17,8 @@ const projects = [
     src: job,
     // link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
     color: "#5196fd",
-    githubLink: "https://github.com/rifatjayed/Doctor-Appoinment",
-    liveLink: "https://sasthya-daktar.netlify.app",
+    // githubLink: "https://github.com/rifatjayed/Doctor-Appoinment",
+    liveLink: "https://job-portal-xi-azure.vercel.app/",
   },
   {
     title: "Sasthya Daktar- Your Healthcare Partner",
@@ -28,7 +28,7 @@ const projects = [
     src: sasthya,
     // link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
     color: "#5196fd",
-    githubLink: "https://github.com/rifatjayed/Doctor-Appoinment",
+    // githubLink: "https://github.com/rifatjayed/Doctor-Appoinment",
     liveLink: "https://sasthya-daktar.netlify.app",
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     src: blood,
     // link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
     color: "#8f89ff",
-    githubLink: "https://github.com/rifatjayed/Blood_Donation",
+    // githubLink: "https://github.com/rifatjayed/Blood_Donation",
     liveLink: "https://donorhub.netlify.app",
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     src: nikee,
     // link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
     color: "#8f89ff",
-    githubLink: "https://github.com/rifatjayed/Nike-Shoes",
+    // githubLink: "https://github.com/rifatjayed/Nike-Shoes",
     liveLink: "https://nike-shoes27.netlify.app/",
   },
 ];
