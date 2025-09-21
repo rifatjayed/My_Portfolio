@@ -7,8 +7,42 @@ import sasthya from "../../assets/images/sasthya.png";
 import blood from "../../assets/images/blood.png";
 import nikee from "../../assets/images/nike.png";
 import job from "../../assets/images/job.png";
-
+import crm from "../../assets/images/crm.png";
+import bazar from "../../assets/images/bazar.png";
 const projects = [
+  {
+    title: "ShoeNest - Your Ultimate Shoe Destination ",
+    description:
+      "ShoeNest is a stylish and modern e-commerce platform dedicated to shoe lovers. Discover the latest collections, explore a variety of brands, and enjoy a smooth shopping experience designed for both comfort and style.",
+    src: nikee,
+    // link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+    color: "#8f89ff",
+    // githubLink: "https://github.com/rifatjayed/Nike-Shoes",
+    liveLink: "https://nike-shoes27.netlify.app/",
+  },
+  {
+    title:
+      "AegisAI CRM – Secure Client & Model Management Dashboard for Private AI Solutions ",
+    description:
+      "AegisAI CRM is a comprehensive, secure dashboard built to manage the business operations of private AI models. It provides a centralized platform for administrators to oversee client accounts, monitor AI usage analytics, manage API keys, and interact directly with their models. This project solves critical challenges of privacy, client management, and data insight for developers and businesses offering bespoke AI services.",
+    src: crm,
+    // link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+    color: "#8f89ff",
+    // githubLink: "https://github.com/rifatjayed/Nike-Shoes",
+    liveLink: "https://crm-five-ashy.vercel.app/login",
+  },
+
+  {
+    title: "bazar Kori- A Modern Full-Stack E-Commerce Experience",
+    description:
+      "bazar Kori is a feature-rich, fully responsive e-commerce web application demonstrating modern full-stack development practices. It provides a seamless and intuitive user journey from browsing a curated product catalog to managing a dynamic shopping cart. Built with performance and user experience in mind, this project showcases the ability to create complex, stateful web applications..",
+    // src: "rock.jpg",
+    src: bazar,
+    // link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
+    color: "#5196fd",
+    // githubLink: "https://github.com/rifatjayed/Doctor-Appoinment",
+    liveLink: "https://e-commerce-murex-rho-38.vercel.app/",
+  },
   {
     title: "JobInto – Smart Job Search Platform",
     description:
@@ -20,17 +54,7 @@ const projects = [
     // githubLink: "https://github.com/rifatjayed/Doctor-Appoinment",
     liveLink: "https://job-portal-xi-azure.vercel.app/",
   },
-  {
-    title: "Sasthya Daktar- Your Healthcare Partner",
-    description:
-      "SasthyaDaktar is a healthcare platform where users can easily find doctors, book appointments, and get medical assistance from anywhere. Built with React, Node.js, and MongoDB.",
-    // src: "rock.jpg",
-    src: sasthya,
-    // link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
-    color: "#5196fd",
-    // githubLink: "https://github.com/rifatjayed/Doctor-Appoinment",
-    liveLink: "https://sasthya-daktar.netlify.app",
-  },
+
   {
     title: "BloodHub - Connect Donors and Save Lives ",
     description:
@@ -40,16 +64,6 @@ const projects = [
     color: "#8f89ff",
     // githubLink: "https://github.com/rifatjayed/Blood_Donation",
     liveLink: "https://donorhub.netlify.app",
-  },
-  {
-    title: "ShoeNest - Your Ultimate Shoe Destination ",
-    description:
-      "ShoeNest is a stylish and modern e-commerce platform dedicated to shoe lovers. Discover the latest collections, explore a variety of brands, and enjoy a smooth shopping experience designed for both comfort and style.",
-    src: nikee,
-    // link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
-    color: "#8f89ff",
-    // githubLink: "https://github.com/rifatjayed/Nike-Shoes",
-    liveLink: "https://nike-shoes27.netlify.app/",
   },
 ];
 
@@ -106,7 +120,7 @@ export default function Projects() {
 
   return (
     <ReactLenis root>
-      <main className="bg-black pt-40  lg:pt-[30px]" ref={container}>
+      <main className="bg-[#04081A] pt-40  lg:pt-[30px]" ref={container}>
         <section className="text-white w-full bg-slate-950">
           {projects.map((project, i) => {
             const targetScale = 1 - (projects.length - i) * 0.05;
