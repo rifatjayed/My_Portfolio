@@ -21,21 +21,20 @@ const projects = [
     liveLink: "https://nike-shoes27.netlify.app/",
   },
   {
-    title:
-      "AegisAI CRM – Secure Client & Model Management Dashboard for Private AI Solutions ",
+    title: "PulseCRM – Smart Business Management Dashboard",
     description:
-      "AegisAI CRM is a comprehensive, secure dashboard built to manage the business operations of private AI models. It provides a centralized platform for administrators to oversee client accounts, monitor AI usage analytics, manage API keys, and interact directly with their models. This project solves critical challenges of privacy, client management, and data insight for developers and businesses offering bespoke AI services.",
+      "PulseCRM is a modern CRM platform that helps businesses manage clients, track leads, and monitor sales performance from a unified dashboard. With secure authentication, role-based access, and interactive data visualization, it streamlines customer relationship management for smarter decision-making.",
     src: crm,
     // link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
     color: "#8f89ff",
     // githubLink: "https://github.com/rifatjayed/Nike-Shoes",
-    liveLink: "https://crm-five-ashy.vercel.app/login",
+    liveLink: "https://crm-five-ashy.vercel.app/",
   },
 
   {
-    title: "bazar Kori- A Modern Full-Stack E-Commerce Experience",
+    title: "DailyMart – Your Everyday Essentials Online",
     description:
-      "bazar Kori is a feature-rich, fully responsive e-commerce web application demonstrating modern full-stack development practices. It provides a seamless and intuitive user journey from browsing a curated product catalog to managing a dynamic shopping cart. Built with performance and user experience in mind, this project showcases the ability to create complex, stateful web applications..",
+      "DailyMart is a responsive e-commerce platform offering a wide range of daily needs products. With smooth navigation, secure checkout, and category-based filtering, it ensures a hassle-free shopping experience for customers.",
     // src: "rock.jpg",
     src: bazar,
     // link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
