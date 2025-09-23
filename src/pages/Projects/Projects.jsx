@@ -18,7 +18,7 @@ const projects = [
     // link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
     color: "#8f89ff",
     // githubLink: "https://github.com/rifatjayed/Nike-Shoes",
-    liveLink: "https://nike-shoes27.netlify.app/",
+    liveLink: "https://nike-shoes-ochre-six.vercel.app/",
   },
   {
     title: "CollabSphere – Smart Project & Team Management Platform",
