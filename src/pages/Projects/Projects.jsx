@@ -21,14 +21,14 @@ const projects = [
     liveLink: "https://nike-shoes27.netlify.app/",
   },
   {
-    title: "PulseCRM – Smart Business Management Dashboard",
+    title: "CollabSphere – Smart Project & Team Management Platform",
     description:
-      "PulseCRM is a modern CRM platform that helps businesses manage clients, track leads, and monitor sales performance from a unified dashboard. With secure authentication, role-based access, and interactive data visualization, it streamlines customer relationship management for smarter decision-making.",
+      "CollabSphere is a modern project management platform where clients can order projects and managers seamlessly connect them with team members or freelancers. It features a Kanban board for task tracking, financial flow management, and a collaborative dashboard that ensures smooth project execution from start to finish.",
     src: crm,
     // link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
     color: "#8f89ff",
     // githubLink: "https://github.com/rifatjayed/Nike-Shoes",
-    liveLink: "https://crm-five-ashy.vercel.app/",
+    // liveLink: "https://crm-five-ashy.vercel.app/",
   },
 
   {
