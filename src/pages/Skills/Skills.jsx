@@ -72,11 +72,11 @@ const SkillsSection = () => {
       color: "text-blue-400",
       skills: [
         { name: "React", icon: <FaReact className="w-4 h-4 text-[#61DAFB]" /> },
-        {
-          name: "Next.js",
-          icon: <SiNextdotjs className="w-4 h-4 text-white" />,
-        },
         ,
+        // {
+        //   name: "Next.js",
+        //   icon: <SiNextdotjs className="w-4 h-4 text-white" />,
+        // },
         {
           name: "Tailwind CSS",
           icon: <SiTailwindcss className="w-4 h-4 text-[#38B2AC]" />,
